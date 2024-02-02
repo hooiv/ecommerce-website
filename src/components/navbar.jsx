@@ -2,6 +2,10 @@ import React from 'react'
 
 export const Navbar = () => {
   return (
-    <div>n</div>
+    <div className='navbar'>
+     <div className="links">
+      
+     </div>
+    </div>
   )
 }
