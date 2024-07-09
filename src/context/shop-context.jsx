@@ -11,6 +11,7 @@ const getDefautCart=()=>{
 }
 export const ShopContextProvider=(props)=>{
     const [cartItems,setCartItems]=useState(getDefautCart());
-    const addToCart=(itemId)=>({...prev, [itemId]:prev[itemId]+1}))
-    return <ShopContext.ShopContextProvider>{props.children}</ShopContext.ShopContextProvider>
+const addToCart=(itemId)=>
+    set cartItems((prev)=>({...prev, [itemId]:prev[itemId]+1}))
+    return <ShofContext.ShopContextProvider>{props.children}</ShopContext.ShopContextProvider>
 };
