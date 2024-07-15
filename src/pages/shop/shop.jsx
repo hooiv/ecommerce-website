@@ -10,7 +10,7 @@ export const Shop = () => {
       <h1>Cam Setup</h1>
    </div>
    <div classname="products"> 
-      {" "}
+      
      {PRODUCTS.map((product)=>( 
        <Product data={product} />
      ))}
