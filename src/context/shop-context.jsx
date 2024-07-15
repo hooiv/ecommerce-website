@@ -38,7 +38,7 @@ const updateCartItemCount=(newAmount,itemId) =>{
 const checkout=()=>{
     setCartItems(getDefautCart());
 }
-const contextValue={cartItems,addToCart,removeFromCart,updateCartItemCount,getTotalCartAmount};
+const contextValue={cartItems,addToCart,removeFromCart,updateCartItemCount,getTotalCartAmount,checkout};
 console.log(cartItems);
     return (<ShopContext.Provider value={contextValue}>
         {props.children}
