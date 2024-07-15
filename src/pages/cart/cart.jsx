@@ -5,7 +5,7 @@ import {CartItem} from './cart-item';
 import {useNavigate} from "react-router-dom";
 import "./cart.css";
 export const Cart = () => {
-  const {CartItems,getTotalCartAmount,checkout}=useContext(ShopContext);
+  const {cartItems,getTotalCartAmount,checkout}=useContext(ShopContext);
   const totalAmount=getTotalCartAmount();
 
   const navigate=useNavigate();
@@ -17,7 +17,7 @@ export const Cart = () => {
         </div>
       <div className="cart">
         {PRODUCTS.map((product)=>{
-          if (CartItems[product,Id]!==0){
+          if (CartItems[product.id]!==0){
             return <CartItem data={product}/>;
           }
         })}
