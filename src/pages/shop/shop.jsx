@@ -6,10 +6,10 @@ import "./shop.css";
 export const Shop = () => {
   return (
     <div className="shop">
-     <div classname="shopTitle">
+     <div className="shopTitle">
       <h1>Cam Setup</h1>
    </div>
-   <div classname="products"> 
+   <div className="products"> 
       
      {PRODUCTS.map((product)=>( 
        <Product data={product} />
