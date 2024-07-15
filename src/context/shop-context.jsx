@@ -8,7 +8,7 @@ const getDefautCart=()=>{
         cart[i]=0;
     }
     return cart;
-};;
+};
 export const ShopContextProvider=(props)=>{
     const [cartItems,setCartItems]=useState(getDefautCart());
 
