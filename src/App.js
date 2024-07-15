@@ -5,6 +5,7 @@ import {Shop} from "./pages/shop/shop";
 import {Cart} from "./pages/cart/cart"
 function App(){
     return (<div className="App">
+        
         <Router>
             <Navbar />
             <Routes>
